@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    --background-color: #ffdcab;
+    --font-color: #000;
+    --font-color-alt: #fff;
+    --button-background: #e651c6;
+    --window-header-background: #519ee6;
+    --window-text-background: #ffffff;
+    --window-header-background-2: #51e683;
+    --window-header-background-3: #e65151;
+    --window-header-background-4: #6a51e6;
+    --window-header-background-5: #e4e651;
+    --window-header-background-6: #51e6da;
+    --text-highlight-yellow: #e6da51c3;
+    --text-highlight-yellow: #e6da51c3;
+    --button-border: #000;
+    --font-size: 1em;
+    --font-size-button: 1.2em;
+    --font-size-h2: 1.5em;
+    --font-size-h1: 2.5em;
+    --font-size-title: 3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background-color);
+    font-family: 'Bebas Kai';
+    width: 100%;
+    height: 100%;
+}
+p {
+    font-size: var(--font-size);
+}
+h2 {
+    font-size: var(--font-size-h2);
+}
+h1 {
+    font-size: var(--font-size-h1);
+}
+.main-container {
+    padding: 0 5%;
+}
+/* HEADER  */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-bottom: 20%; */
+}
+.header-logo {
+    color: var(--font-color-alt);
+    background-color: var(--font-color);
+    padding: 10px 20px;
+    font-size: var(--font-size-h2);
+}
+.header-menu {
+    display: none;
+    display: flex;
+    gap: 15px;
+}
+.header-menu-item {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+/* HEADER  */
+/* ============================== */
+/* HOME */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.home-cta {
+    background-color: var(--button-background);
+    border: 3px solid var(--button-border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    transform: rotate(-3deg);
+    padding: 10px 10px;
+    box-shadow: 4px 4px;
+    margin-bottom: 10px;
+}
+/* HOME TEXT  */
+.home-text {
+    display: flex;
+}
+.home-text-message {
+    background-color: var(--window-text-background);
+    border: 3px solid var(--button-border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    /* padding: 10px 10px; */
+    box-shadow: 4px 4px;
+}
+.home-text-message__header {
+    border-bottom: 3px solid var(--button-border);
+    background-color: var(--window-header-background);
+    padding: 5px 10px;
+}
+.home-text-message__text {
+    padding: 10px;
+    line-height: 1.5em;
+}
+.text-highlight-yellow {
+    background-color: var(--text-highlight-yellow);
+    padding: 0px 3px;
+}
+
+/* HOME */
+/* ============================== */
+/* WORK  */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 150px;
+}
+/* STYLING FOR WORK HEADER  */
+.work > h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* GLOBAL STYLING FOR WORK WINDOWS  */
+.work-project-elements {
+    background-color: var(--window-text-background);
+    border: 3px solid var(--button-border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    /* padding: 10px 10px; */
+    box-shadow: 4px 4px;
+}
+.work-text-message__header {
+    border-bottom: 3px solid var(--button-border);
+    background-color: var(--window-header-background);
+    padding: 5px 10px;
+}
+.work-text-message__text {
+    padding: 10px;
+    padding-top: 0px;
+    line-height: 1.5em;
+}
+/* INDIVIDUAL STYLING FOR WORK CONTAINERS */
+.project-1 > .work-text-message__header {
+    background-color: var(--window-header-background-2);
+}
+.project-2 > .work-text-message__header {
+    background-color: var(--window-header-background-3);
+}
+.project-3 > .work-text-message__header {
+    background-color: var(--window-header-background-4);
+}
+/* STYLING FOR IMAGE INSIDE OF WORKS  */
+.work-image-container {
+    padding: 10px;
+    /* background-color: #000; */
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px solid var(--button-border);
+    /* RETHINK WHETHER OR NOT TO LEAVE THIS SHADOW HERE  ===========================*/
+    box-shadow: 3px 3px;
+    /* border-radius: 3px; */
+}
+/* GLOBAL STYLING FOR LINKS INSIDE OF WORK CONTAINERS */
+.work-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.work-links > a {
+    /* background-color: #519ee6; */
+    padding: 5px 10px;
+    border: 3px solid var(--button-border);
+    color: var(--font-color);
+    text-decoration: none;
+    box-shadow: 3px 3px;
+}
+/* UNIQUE STYLING FOR BUTTONS/WORK CONTAINER  */
+.project-1 > .work-links > a {
+    background-color: var(--window-header-background-2);
+}
+.project-2 > .work-links > a {
+    background-color: var(--window-header-background-3);
+}
+.project-3 > .work-links > a {
+    background-color: var(--window-header-background-4);
+}
+
+/* WORK  */
+/* ============================== */
+/* ABOUT */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 150px;
+}
+.about > h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about-text {
+    background-color: var(--window-text-background);
+    border: 3px solid var(--button-border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    /* padding: 10px 10px; */
+    box-shadow: 4px 4px;
+}
+.home-text-message {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 3px solid var(--button-border); */
+    /* RETHINK WHETHER OR NOT TO LEAVE THIS SHADOW HERE  ===========================*/
+    /* box-shadow: 3px 3px; */
+    /* border-radius: 3px; */
+}
+.about-text-message-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.about-text-message-img > img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: none;
+    /* RETHINK WHETHER OR NOT TO LEAVE THIS SHADOW HERE  ===========================*/
+    box-shadow: 0px 0px;
+    /* border-radius: 3px; */
+    display: flex;
+}
+.about-text-message__header {
+    border-bottom: 3px solid var(--button-border);
+    background-color: var(--window-header-background-5);
+    padding: 5px 10px;
+}
+.about-text-message__text {
+    padding: 10px;
+    /* padding-top: 0px; */
+    line-height: 1.5em;
+}
+
+/* ABOUT ME  */
+/* ============================== */
+/* CONTACT */
+
+.contact {
+    /* height: 100vh; */
+    /* REMOVE MARGIN AT THE END  */
+    margin-bottom: 20px;
+}
+.contact > h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contact-me {
+    background-color: var(--window-text-background);
+    border: 3px solid var(--button-border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    /* padding: 10px 10px; */
+    box-shadow: 4px 4px;
+    /* height: 100vh; */
+}
+/* STYLING FOR TITLE OF CONTAINER  */
+.contact-me-title {
+    border-bottom: 3px solid var(--button-border);
+    background-color: var(--window-header-background-6);
+    padding: 5px 10px;
+}
+.contact-me-text {
+    padding: 5px 10px;
+}
+
+
+/* ----------- */
+.main-contact-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=email], input[type=tel], textarea {
+    font-family: 'Bebas Kai';
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    /* ADD BORDER HERE  */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 16px; /* Bottom margin */
+    background-color: var(--window-text-background);
+    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    box-shadow: 3px 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px solid var(--button-border);
+}
+input[type=submit] {
+    font-family: 'Bebas Kai';
+    background-color: var(--window-header-background-6);
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    padding: 6px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    border: 3px solid var(--button-border);
+    box-shadow: 4px 4px;
+    margin-bottom: 10px;
+}

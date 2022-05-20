@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <title>Ethan Galvan</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header id="home">
+                <a href="index.html" class="header-logo">Ethan</a>
+                <nav class="header-menu">
+                    <a href="#home" class="header-menu-item">Home</a>
+                    <a href="#work" class="header-menu-item">Work</a>
+                    <a href="#about" class="header-menu-item">About</a>
+                    <a href="#contact" class="header-menu-item">Contact</a>
+                </nav>
+            </header>
+            <main>
+                <div class="home">
+                    <h1>I enjoy coding your users experiences!</h1>
+                    <a href="#" class="home-cta">GET IN CONTACT!</a>
+                    <div class="home-text">
+                        <div class="home-text-message">
+                            <p class="home-text-message__header">welcome-message.txt</p>
+                            <p class="home-text-message__text">I'm a <span class="text-highlight-yellow">Software Developer</span> who graduated from <span class="text-highlight-yellow">CarrerFoundry</span>. I enjoy building complex UIs and practicing my skills to get better at what I do.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BEGGINNIGN WORK SECTION  -->
+                <div class="work" id="work">
+                    <h1>Work</h1>
+                    <div class="work-project">
+                        <div class="work-project-elements project-1">
+                            <p class="work-text-message__header">project-one.md</p>
+                            <div class="work-image-container">
+                                <img src="img/placeholder.jpeg" alt="qwdw">
+                            </div>
+                            <p class="work-text-message__text">Proin laoreet dolor et ultrices auctor. In varius justo et odio maximus, id aliquam nunc faucibus. Sed ut porttitor velit. Etiam placerat feugiat eros non sagittis.</p>
+                            <div class="work-links">
+                                <a href="https://github.com/ethangalva">GITHUB</a>
+                                <a href="https://placeholder.com/">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-project">
+                        <div class="work-project-elements project-2">
+                            <p class="work-text-message__header">project-two.md</p>
+                            <div class="work-image-container">
+                                <img src="img/placeholder.jpeg" alt="qwdw">
+                            </div>
+                            <p class="work-text-message__text">Proin laoreet dolor et ultrices auctor. In varius justo et odio maximus, id aliquam nunc faucibus. Sed ut porttitor velit. Etiam placerat feugiat eros non sagittis.</p>
+                            <div class="work-links">
+                                <a href="https://github.com/ethangalva">GITHUB</a>
+                                <a href="https://placeholder.com/">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-project">
+                        <div class="work-project-elements project-3">
+                            <p class="work-text-message__header">project-three.md</p>
+                            <div class="work-image-container">
+                                <img src="img/placeholder.jpeg" alt="qwdw">
+                            </div>
+                            <p class="work-text-message__text">Proin laoreet dolor et ultrices auctor. In varius justo et odio maximus, id aliquam nunc faucibus. Sed ut porttitor velit. Etiam placerat feugiat eros non sagittis.</p>
+                            <div class="work-links">
+                                <a href="https://github.com/ethangalva">GITHUB</a>
+                                <a href="https://placeholder.com/">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABOUT ME SECTION  -->
+                <div class="about" id="about">
+                    <h1>ABOUT ME</h1>
+                    <div>
+                        <div class="about-text">
+                            <div class="about-text-message">
+                                <p class="about-text-message__header">about-me.txt</p>
+                                <p class="about-text-message__text">I am a Full Stack Web Development student with aspirations of launching my own software with the purpose of making dificult conversations about one's psichological health easier to communicate with our loved ones. My main motivation is self improvement and the idea that my single mother planted in my head since I was a kid, and that is that I could achieve anything as long as I had true desire to acomplish my goals.</p>
+                                <div class="about-text-message-img">
+                                    <img src="img/student.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT ME SECTION  -->
+                <div class="contact" id="contact">
+                    <h1>CONTACT</h1>
+                    <div class="contact-me">
+                        <p class="contact-me-title">mail-to: CONTACT-ME.com</p>
+                        <div class="contact-me-text">
+                            <div class="footer-form">
+                                <form action="#" method="post" id="contact-form">
+                                    <!--class is there to be able to edit all labels with one single css element-->
+                                    <!--for is there to connect the label to the form id-->
+                                    <!--type only allows that type to be on the form-->
+                                    <!--id is unique to each input-->
+                                    <!--required makes a input necesary for the user to be able to submit the form-->
+                                    <input type="email" id="contact-email" required placeholder="Your email address...">
+                
+                                    
+                                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel" placeholder="Your phone number...">
+                
+                                    
+                                    <!--maxlenght defines the max amount of characters that the user can type in the box-->
+                                    <textarea maxlength="240" id="contact-message" required placeholder="Your message..."></textarea>
+                
+                                    <!--Submit type makes a button-->
+                                    <!--value is the message that is contained inside of the button-->
+                                    <input type="submit" value="Send Message">
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
+
+
+<!-- <a href="https://www.flaticon.com/free-icons/student" title="student icons">Student icons created by Freepik - Flaticon</a> -->
