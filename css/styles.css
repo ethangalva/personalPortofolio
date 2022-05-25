@@ -23,18 +23,21 @@
     --font-size-h2: 1.5em;
     --font-size-h1: 2.5em;
     --font-size-title: 3em;
+
 }
 
 html {
     scroll-behavior: smooth;
-    display: flex;
-    justify-content: center;
+    
 }
 body {
     background-color: var(--background-color);
     font-family: 'bebas_kairegular';
-    max-width: 1080px;
     height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 p {
     font-size: var(--font-size);
@@ -46,7 +49,7 @@ h1 {
     font-size: var(--font-size-h1);
 }
 .main-container {
-    padding: 0 5%;
+    max-width: 920px;
 }
 /* HEADER  */
 header {
@@ -55,6 +58,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     /* margin-bottom: 20%; */
+    padding: 0 5%;
 }
 .header-logo {
     color: var(--font-color-alt);
@@ -70,6 +74,7 @@ header {
 .header-menu-item {
     color: var(--font-color);
     text-decoration: none;
+    font-size: var(--font-size-button);
 }
 
 /* HEADER  */
@@ -83,6 +88,7 @@ header {
     height: 100vh;
     justify-content: center;
     flex-wrap: nowrap;
+    padding: 0 5%;
 }
 .home-cta {
     background-color: var(--button-background);
@@ -140,6 +146,7 @@ header {
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 150px;
+    padding: 0 5%;
 }
 /* STYLING FOR WORK HEADER  */
 .work > h1 {
@@ -231,7 +238,8 @@ img {
     gap: 20px;
     justify-content: center;
     flex-wrap: nowrap;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+    padding: 0 5%;
 }
 .about > h1 {
     display: flex;
@@ -291,13 +299,74 @@ img {
 /* ============================== */
 /* CONTACT */
 
-.contact {
-    /* height: 100vh; */
-    /* REMOVE MARGIN AT THE END  */
+footer {
+    background-color: var(--font-color);
+    padding-top: 20px;
+    width: 100%;
+    /* height: 50vh; */
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-contact {
+    color: var(--font-color-alt);
+    padding: 0 5%;
+    max-width: 600px;
+}
+.footer-contact > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-buttons > a {
+    background-color: var(--font-color-alt);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.footer-contact > h2 {
+    text-align: center;
+}
+/* STYLING FOR SOCIALS AT THE BOTTOM OF THE PAGE  */
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.footer-socials > a {
+    background-color: var(--font-color-alt);
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size-button);
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-socials > .footer-socials-linked-in {
+    background-color: var(--window-header-background-3);
+}
+.footer-socials > .footer-socials-github {
+    background-color: var(--window-header-background-4);
+}
+.footer-contact {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+/* .contact {
     margin-bottom: 20px;
     display: flex;
     gap: 20px;
     flex-direction: column;
+    background-color: #000;
 }
 .contact > h1 {
     display: flex;
@@ -311,12 +380,10 @@ img {
     text-decoration: none;
     color: var(--font-color);
     font-size: var(--font-size-button);
-    /* padding: 10px 10px; */
     box-shadow: 4px 4px;
-    /* height: 100vh; */
-}
+} */
 /* STYLING FOR TITLE OF CONTAINER  */
-.contact-me-title {
+/* .contact-me-title {
     border-bottom: 3px solid var(--button-border);
     background-color: var(--window-header-background-6);
     padding: 5px 10px;
@@ -324,24 +391,23 @@ img {
 .contact-me-text {
     padding: 5px 10px;
 }
-
+ */
 
 /* ----------- */
-.main-contact-table {
+/* .main-contact-table {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 input[type=email], input[type=tel], textarea {
     font-family: 'Bebas Kai';
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    /* ADD BORDER HERE  */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-bottom: 16px; /* Bottom margin */
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
     background-color: var(--window-text-background);
-    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: none; 
     box-shadow: 3px 3px;
     width: 100%;
     height: 100%;
@@ -365,8 +431,34 @@ input[type=submit] {
     margin-bottom: 10px;
 }
 
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIE FOR TABLETS */
 @media only screen and (min-width: 600px) {
+    .header-menu-item {
+        font-size: var(--font-size-h2);
+    }
     /* STYLING TO ADD IMAGE TO HOME  */
     .home-text-message {
         max-width: 65%;
@@ -489,6 +581,12 @@ input[type=submit] {
         transition: all .25s ease-in-out;
     }
     .about-text:hover {
+        transform: scale(1.05);
+    }
+    .footer-buttons > a {
+        transition: all .25s ease-in-out;
+    }
+    .footer-buttons > a:hover {
         transform: scale(1.05);
     }
 }
